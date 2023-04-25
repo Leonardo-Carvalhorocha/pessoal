@@ -1,5 +1,5 @@
 .article-bg {
-  padding-top: 7.5rem;
+  padding-top: 2.5rem;
   background-color: #1E1C1C;
 }
 
@@ -101,6 +101,9 @@
 }
 
 @media (max-width: 500px) {
+  .article-bg {
+    padding-top: 12.5rem;
+  }
   .apresentacao p {
     font-size: 1rem;
   }
