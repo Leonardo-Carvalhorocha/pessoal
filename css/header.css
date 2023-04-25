@@ -1,0 +1,61 @@
+.header-bg {
+  background: #1E1C1C;
+  border-bottom: 0.125rem solid #61a0db;
+  padding: 0 0.94rem;
+}
+
+.container-header {
+max-width: 75rem;
+margin: 0 auto;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
+padding-top: 1.25rem;
+padding-bottom: 0.625rem;
+}
+
+.menu {
+font-family: "Fira Sans";
+font-size: 1.125rem;
+display: flex;
+flex-wrap: wrap;
+gap: 2.5rem;
+}
+
+.menu a {
+color: #e0e0e0;
+}
+
+.menu a:hover {
+color: #61a0db;
+}
+
+@media (max-width: 800px) {
+  .menu {
+    margin-left: 0.94rem;
+    gap: 1.25rem;
+  }
+  .menu a {
+    background: #3b3b3b;
+    padding: 0.375rem 0.75rem;
+    border-radius: 0.25rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .container-header {
+   justify-content: center;
+  }
+
+  .menu {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 665px) {
+  .menu {
+    margin-top: 1.25rem;
+    margin-bottom: 0.625rem;
+  }
+}
