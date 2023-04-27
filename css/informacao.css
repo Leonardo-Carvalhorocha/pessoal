@@ -45,18 +45,19 @@
   gap: 0.5rem;
 }
 
-.botao-container li {
+.botao-container li a {
   font-family: "Fira Sans";
   font-weight: 600;
   margin-top: 0.63rem;
-  background: linear-gradient(180deg, #519EE7 0%, #21619D 100%);
-  border-radius: 0.2rem;
   text-transform: uppercase;
-}
-
-.botao-container li a {
   color: #072C4F;
   padding: 1.5rem 5rem;
+  background: linear-gradient(180deg, #519EE7 0%, #21619D 100%);
+  border-radius: 0.2rem;
+}
+
+.botao-container li a:hover {
+  background: linear-gradient(180deg, #255E90 50%, #255E95 100%);
 }
 
 @media (max-width:1100px) {
