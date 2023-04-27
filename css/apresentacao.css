@@ -1,5 +1,5 @@
 .article-bg {
-  padding-top: 2.5rem;
+  padding-top: 12rem;
   background-color: #1E1C1C;
 }
 
@@ -37,8 +37,14 @@
   position: relative;
 }
 
-.btn {
+.cv {
   display: flex;
+  justify-items: center;
+}
+
+.btn {
+  display: grid;
+  grid-template-columns: auto 1fr;
   gap: 0.625rem;
 }
 

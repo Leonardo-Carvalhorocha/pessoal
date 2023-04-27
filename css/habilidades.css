@@ -11,16 +11,18 @@
 .section-container ul{
   padding: 0 1.25rem;
   display: flex;
- flex-wrap: wrap;
+  flex-wrap: wrap;
   padding-bottom: 1.25rem;
   justify-content: center;
+  align-items: center;
   gap: 3.75rem;
 }
 
 .section-container ul li {  
-  padding: 0.62rem;
+  padding: 1rem;
   background-color: #61a0db17; 
   border-radius: 1.87rem 0 0 0;  
+  border-bottom: 4px solid #1572B6;
 }
 
 .habilidades {
@@ -38,18 +40,3 @@
   top: -1.56rem;
 }
 
-.css {
-  border-bottom: 0.25rem solid #1572B6;
-}
-
-.html {
-  border-bottom: 0.25rem solid #E44D26;
-}
-
-.js {
-  border-bottom: 0.25rem solid #E6A328;
-}
-
-.figma {
-  border-bottom: 0.25rem solid #A259FF;
-}
