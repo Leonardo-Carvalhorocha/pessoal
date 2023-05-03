@@ -25,8 +25,8 @@
     </div>
   </header>
 
-  <main class="main-bg">
-      <div class="main-container">
+  <main class="main-bg ">
+      <div class="main-container js-scroll">
         <div class="foto">
           <img  src="./img/Foto sem fundo, resolucao otima.png" alt="Foto de perfil" width="360" height="520">
         </div>
@@ -41,29 +41,31 @@
       </div>
   </main>
 
-  <article class="article-bg"> 
-        <div class="detalhe">
-          <h1 class="titulo" id="sobre">Sobre</h1>
+  <article class="article-bg "> 
+        <div class="container js-scroll">
+          <div class="detalhe">
+            <h1 class="titulo" id="sobre">Sobre</h1>
+          </div>
+                <div class="article-container">
+          <div class="apresentacao">
+            <p>Sou um desenvolvedor Front-End que vive em Manaus AM, atualmente estou cursando análise e desenvolvimento de sistemas.</p>
+            <p>Meu interesse e primeiro contato com desenvolvimento web começou em 2022 com algumas aplicações simples em HTML e CSS.</p>
+            <p>No momento estou estudando e aplicando, na faculdade e em um curso online. De modo a ampliar meus conhecimento e habilidades.</p>
+          </div>
+          <div>
+            <ul class="botao-container cv">
+              <li><a class="btn" href="./cvdownload/Leonardo-CV.pdf" download >download Cv <img src="./img/download.svg" alt="download" width="20" height="20"></a></li>
+            </ul>
+          </div>
+          <div class="foto-apresentacao">
+            <img src="./img/foto-apresentação.png" alt="foto sorrindo" width="260" height="260">
+          </div>
+              </div>
         </div>
-      <div class="article-container">
-        <div class="apresentacao">
-          <p>Sou um desenvolvedor Front-End que vive em Manaus AM, atualmente estou cursando análise e desenvolvimento de sistemas.</p>
-          <p>Meu interesse e primeiro contato com desenvolvimento web começou em 2022 com algumas aplicações simples em HTML e CSS.</p>
-          <p>No momento estou estudando e aplicando, na faculdade e em um curso online. De modo a ampliar meus conhecimento e habilidades.</p>
-        </div>  
-        <div>
-          <ul class="botao-container cv">
-            <li><a class="btn" href="./cvdownload/Leonardo-CV.pdf" download >download Cv <img src="./img/download.svg" alt="download" width="20" height="20"></a></li>
-          </ul>
-        </div>
-        <div class="foto-apresentacao">
-          <img src="./img/foto-apresentação.png" alt="foto sorrindo" width="260" height="260">
-        </div>
-    </div>
   </article>
 
-  <section class="section-bg" aria-label="Habilidades">
-    <div class="habilidades">
+  <section class="section-bg " aria-label="Habilidades">
+    <div class="habilidades js-scroll">
       <h1 class="titulo" id="habilidades">Habilidades</h1>
       <div class="section-container">
         <ul>
@@ -76,8 +78,8 @@
     </div>
   </section>
 
-  <section class="projetos-bg" aria-label="Projetos">
-    <div class="projetos-item">
+  <section class="projetos-bg " aria-label="Projetos">
+    <div class="projetos-item js-scroll">
       <h1 class="titulo" id="projetos">Projetos</h1>
       <div class="projetos-container">
         <ul >
@@ -135,5 +137,8 @@
       <p class="direitos">Leonardo Carvalho © Alguns direitos reservados</p>
     </div>
   </footer>
+
+
+  <script src="script.js"></script>
 </body>
 </html>
