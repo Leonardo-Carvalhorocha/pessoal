@@ -14,8 +14,11 @@
   <header class="header-bg">
     <div class="container-header">
       <img src="./img/logo.svg" alt="Leonardo" width="180" height="30">
-      <nav>
-        <ul class="menu">
+      <nav id="nav">
+        <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+          <span id="hamburger"></span>
+        </button>
+        <ul class="menu js-menu" role="menu">
           <li><a href="#projetos">Projetos</a></li>
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#habilidades">Habilidades</a></li>
@@ -90,6 +93,8 @@
           <li><a href="https://leonardo-carvalhorocha.github.io/bikcraft/" target="_blank"><img src="./img/projetos/bikcraft.png" alt="bikcraft" width="352" height="170"></a></li>
 
             <li><a href="https://leonardo-carvalhorocha.github.io/flexblog/" target="_blank"><img src="./img/projetos/flex-blog.png" alt="flexblog" width="353" height="170"></a></li>
+
+            <li><a href="https://leonardo-carvalhorocha.github.io/animaisFantasticos/" target="_blank"><img src="./img/projetos/animais-fantasticos.png" alt="animais-fantasticos"  width="353" height="170"></a></li>
         </ul>
       </div>
     </div>
@@ -101,16 +106,16 @@
       <div>
         <ul class="footer-lista">
           <li>
-            <a href="mailto:leonardo2001darocha@gmail.com">
-              <img class="img" src="./img/email.svg" alt="icone e-mail" width="40" height="40">
+            <a href="mailto:leonardo2001darocha@gmail.com" target="_blank">
+              <img class="img" src="./img/email.svg" alt="icone e-mail" width="30" height="30">
               <h2>E-mail</h2>
               <p>leonardo2001darocha@gmail.com</p>
             </a>
           </li>
 
           <li>
-            <a href="tel:+5551997793843">
-              <img class="img" src="./img/contato.svg" alt="icone e-mail" width="40" height="40">
+            <a href="https://contate.me/leonardocarvalhodarocha" target="_blank">
+              <img class="img" src="./img/contato.svg" alt="icone e-mail" width="30" height="30">
               <h2>Telefone</h2>
               <p>(51) 99779-3843</p>
             </a>
@@ -118,7 +123,7 @@
 
           <li>
             <a href="https://www.linkedin.com/in/leonardo-carvalho-4a9731224/" target="_blank">
-              <img class="img" src="./img/linkedin 1.svg" alt="icone e-mail" width="40" height="40">
+              <img class="img" src="./img/linkedin 1.svg" alt="icone e-mail" width="30" height="30">
               <h2>Linkedin</h2>
               <p>@LeonardoCarvalho</p>
             </a>
@@ -126,7 +131,7 @@
 
           <li>
             <a href="https://github.com/Leonardo-Carvalhorocha" target="_blank">
-              <img class="img" src="./img/github 1.svg" alt="icone e-mail" width="40" height="40">
+              <img class="img" src="./img/github 1.svg" alt="icone e-mail" width="30" height="30">
               <h2>GitHub</h2>
               <p>@Leonardo-Carvalhorocha</p>
             </a>
@@ -138,12 +143,19 @@
       <div>
         <nav class="nav-fixed">
           <ul>
-            <li><a href="https://github.com/Leonardo-Carvalhorocha" target="_blank"><img src="./img/github 1.svg" alt="GitHub" width="30px" height="30px"></a></li>
-            <li><a href="mailto:leonardo200darocha@gmail.com"> <img src="./img/email.svg" alt="E-mail" width="30px" height="30px"></a></li>
-            <li><a href="https://www.linkedin.com/in/leonardo-carvalho-4a9731224/" target="blank"><img src="./img/linkedin 1.svg" alt="linkedin" width="30px" height="30px"></a></li>
-            <li><a href="tel:+5551997793843"><img src="./img/contato.svg" alt="contato" width="30px" height="30px"></a></li>
+            <li><a href="https://github.com/Leonardo-Carvalhorocha" target="_blank"><img src="./img/github 1.svg" alt="GitHub" width="25px" height="25px"></a></li>
+            <li><a href="mailto:leonardo250darocha@gmail.com" target="
+              "> <img src="./img/email.svg" alt="E-mail" width="25px" height="25px"></a></li>
+            <li><a href="https://www.linkedin.com/in/leonardo-carvalho-4a9731224/" target="blank"><img src="./img/linkedin 1.svg" alt="linkedin" width="25px" height="25px"></a></li>
+            <li><a href="https://contate.me/leonardocarvalhodarocha" target="_blank"><img src="./img/contato.svg" alt="contato" width="25px" height="25px"></a></li>
           </ul>
         </nav>
+      </div>
+
+      <div class="nav-whats">
+        <ul>
+          <li><a href="https://contate.me/leonardocarvalhodarocha" target="_blank"><img src="./img/whatsapp.png" alt="whatsapp" width="45px" height="45px"></a></li>
+        </ul>
       </div>
       
       <p class="direitos">Leonardo Carvalho © Alguns direitos reservados</p>

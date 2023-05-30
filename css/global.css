@@ -8,7 +8,7 @@ text-decoration: none;
 }
 
 a {
-  display: block;
+  display: inline-block;
 }
 
 img {

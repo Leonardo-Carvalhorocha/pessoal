@@ -23,39 +23,99 @@ flex-wrap: wrap;
 gap: 2.5rem;
 }
 
+.menu a::after {
+  content: "";
+  height: 2px;
+  width: 0;
+  border-radius: 2px;
+  background: #61a0db;
+  display: block;
+  transition: .4s ease-in-out;
+}
+
+.menu a:hover::after {
+  opacity: 1;
+  width: 100%;
+}
+
 .menu a {
 color: #e0e0e0;
 }
 
-.menu a:hover {
-color: #61a0db;
-}
-
-@media (max-width: 800px) {
-  .menu {
-    margin-left: 0.94rem;
-    gap: 1.25rem;
-  }
-  .menu a {
-    background: #3b3b3b;
-    padding: 0.375rem 0.75rem;
-    border-radius: 0.25rem;
-  }
+#btn-mobile {
+  display: none;
 }
 
 @media (max-width: 700px) {
-  .container-header {
-   justify-content: center;
-  }
-
   .menu {
-    justify-content: center;
+   display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background: #0E1013;
+    height: 0px;
+    transition: .6s;
+    z-index: 1000;
+    visibility: hidden;
+    overflow-y: hidden;
   }
-}
-
-@media (max-width: 665px) {
-  .menu {
-    margin-top: 1.25rem;
-    margin-bottom: 0.625rem;
+  .menu a {
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 6px 16px;
+  }
+  .menu a::after,  .menu .detalhe::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100px;
+    background: #61a0db;
+    margin-left: 2px;
+  }
+  #nav.active .menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #btn-mobile {
+    color: #ffffff;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 10px;
+  }
+  #hamburger {
+    width: 20px;
+    border-top: 3px solid;
+    color: #ffffff;
+    border-radius: 2px;
+  }
+  #hamburger::after,  
+  #hamburger::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    margin-top: 5px;
+    background: currentColor;
+    transition: .3s;
+    position: relative;
+    border-radius: 2px;
+  }
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
   }
 }
